@@ -2,7 +2,7 @@
     // Enter your host name, database username, password, and database name.
     // If you have not set database password on localhost then set empty.
     // localhost configuration  
-    // $con = mysqli_connect("localhost","root","","theblackthreat");
+    // $con = mysqli_connect("","","","");
     
     // Remote Configuration
     //$con = mysqli_connect("server","username","password","database_schema");
