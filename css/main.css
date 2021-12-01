@@ -1,0 +1,1241 @@
+
+/* ==========================================================================
+   #FONT
+   ========================================================================== */
+.font-robo {
+  font-family: "Roboto", "Arial", "Helvetica Neue", sans-serif;
+}
+
+/* ==========================================================================
+   #GRID
+   ========================================================================== */
+.row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.row-space {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.col-2 {
+  width: -webkit-calc((100% - 60px) / 2);
+  width: -moz-calc((100% - 60px) / 2);
+  width: calc((100% - 60px) / 2);
+}
+
+@media (max-width: 767px) {
+  .col-2 {
+    width: 100%;
+  }
+}
+
+/* ==========================================================================
+   #BOX-SIZING
+   ========================================================================== */
+/**
+ * More sensible default box-sizing:
+ * css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice
+ */
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+/* ==========================================================================
+   #RESET
+   ========================================================================== */
+/**
+ * A very simple reset that sits on top of Normalize.css.
+ */
+body,
+h1, h2, h3, h4, h5, h6,
+blockquote, p, pre,
+dl, dd, ol, ul,
+figure,
+hr,
+fieldset, legend {
+  margin: 0;
+  padding: 0;
+
+}
+
+/**
+ * Remove trailing margins from nested lists.
+ */
+li > ol,
+li > ul {
+  margin-bottom: 0;
+}
+
+/**
+ * Remove default table spacing.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/**
+ * 1. Reset Chrome and Firefox behaviour which sets a `min-width: min-content;`
+ *    on fieldsets.
+ */
+fieldset {
+  min-width: 0;
+  /* [1] */
+  border: 0;
+}
+
+
+/* ==========================================================================
+   #PAGE WRAPPER
+   ========================================================================== */
+.page-wrapper {
+  min-height: 100vh;
+}
+
+body {
+  font-family: "Roboto", "Arial", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 15px;
+}
+
+h6 {
+  font-size: 13px;
+}
+
+/* ==========================================================================
+   #BACKGROUND
+   ========================================================================== */
+.bg-blue {
+  background: #2c6ed5;
+}
+
+.bg-red {
+  background: grey;
+}
+
+/* ==========================================================================
+   #SPACING
+   ========================================================================== */
+.p-t-100 {
+  padding-top: 100px;
+}
+
+.p-t-180 {
+  padding-top: 180px;
+}
+
+.p-t-20 {
+  padding-top: 20px;
+}
+
+.p-t-30 {
+  padding-top: 30px;
+}
+
+.p-b-100 {
+  padding-bottom: 100px;
+}
+
+/* ==========================================================================
+   #WRAPPER
+   ========================================================================== */
+.wrapper {
+  margin: 0 auto;
+}
+
+.wrapper--w960 {
+  max-width: 960px;
+}
+
+.wrapper--w680 {
+  max-width: 680px;
+}
+
+/* ==========================================================================
+   #BUTTON
+   ========================================================================== */
+.btn {
+  line-height: 40px;
+  display: inline-block;
+  padding: 0 25px;
+  cursor: pointer;
+  color: #fff;
+  font-family: "Roboto", "Arial", "Helvetica Neue", sans-serif;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.btn--radius {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.btn--green {
+  background: #57b846;
+}
+
+.btn--green:hover {
+  background: #4dae3c;
+}
+
+/* ==========================================================================
+   #DATE PICKER
+   ========================================================================== */
+td.active {
+  background-color: #2c6ed5;
+}
+
+input[type="date" i] {
+  padding: 14px;
+}
+
+.table-condensed td, .table-condensed th {
+  font-size: 14px;
+  font-family: "Roboto", "Arial", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+}
+
+.daterangepicker td {
+  width: 40px;
+  height: 30px;
+}
+
+.daterangepicker {
+  border: none;
+  -webkit-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  display: none;
+  border: 1px solid #e0e0e0;
+  margin-top: 5px;
+}
+
+.daterangepicker::after, .daterangepicker::before {
+  display: none;
+}
+
+.daterangepicker thead tr th {
+  padding: 10px 0;
+}
+
+.daterangepicker .table-condensed th select {
+  border: 1px solid #ccc;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  font-size: 14px;
+  padding: 5px;
+  outline: none;
+}
+
+/* ==========================================================================
+   #FORM
+   ========================================================================== */
+input {
+  outline: none;
+  margin: 0;
+  border: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  width: 100%;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+/* input group 1 */
+/* end input group 1 */
+.input-group {
+  position: relative;
+  margin-bottom: 32px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.input-icon {
+  position: absolute;
+  font-size: 18px;
+  color: #ccc;
+  right: 8px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.input--style-2 {
+  padding: 9px 0;
+  color: #666;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.input--style-2::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #808080;
+}
+
+.input--style-2:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #808080;
+  opacity: 1;
+}
+
+.input--style-2::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #808080;
+  opacity: 1;
+}
+
+.input--style-2:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #808080;
+}
+
+.input--style-2:-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #808080;
+}
+
+/* ==========================================================================
+   #SELECT2
+   ========================================================================== */
+.select--no-search .select2-search {
+  display: none !important;
+}
+
+.rs-select2 .select2-container {
+  width: 100% !important;
+  outline: none;
+}
+
+.rs-select2 .select2-container .select2-selection--single {
+  outline: none;
+  border: none;
+  height: 36px;
+}
+
+.rs-select2 .select2-container .select2-selection--single .select2-selection__rendered {
+  line-height: 36px;
+  padding-left: 0;
+  color: #808080;
+  font-size: 16px;
+  font-family: inherit;
+  font-weight: 500;
+}
+
+.rs-select2 .select2-container .select2-selection--single .select2-selection__arrow {
+  height: 34px;
+  right: 4px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.rs-select2 .select2-container .select2-selection--single .select2-selection__arrow b {
+  display: none;
+}
+
+.rs-select2 .select2-container .select2-selection--single .select2-selection__arrow:after {
+  font-family: "Material-Design-Iconic-Font";
+  content: '\f2f9';
+  font-size: 18px;
+  color: #ccc;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.rs-select2 .select2-container.select2-container--open .select2-selection--single .select2-selection__arrow::after {
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+
+.select2-container--open .select2-dropdown--below {
+  border: none;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  border: 1px solid #e0e0e0;
+  margin-top: 5px;
+  overflow: hidden;
+}
+
+/* ==========================================================================
+   #TITLE
+   ========================================================================== */
+
+.title {
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 37px;
+}
+
+/* ==========================================================================
+   #CARD
+  ========================================================================== */
+.card {
+  overflow: hidden;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background: #fff;
+}
+
+/*============================================================================
+#canvas navbar
+=============================================================================*/
+
+body {
+  font-family: "Lato", sans-serif;
+}
+/*
+.sidenav {
+  height: 911px;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  margin-top: 75px;
+  margin-left: 6px;
+}
+*/
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 18px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+/*=====================================================
+Navback
+=======================================================*/
+
+.card-2 {
+  -webkit-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  width: 100%;
+  display: table;
+}
+
+.card-2 .card-heading {
+  background: url("../images/bg-heading-02.jpg") top left/cover no-repeat;
+  width: 29.1%;
+  display: table-cell;
+}
+
+.card-2 .card-body {
+  display: table-cell;
+  padding: 80px 90px;
+  padding-bottom: 88px;
+}
+
+@media (max-width: 767px) {
+  .card-2 {
+    display: block;
+  }
+  .card-2 .card-heading {
+    width: 100%;
+    display: block;
+    padding-top: 300px;
+    background-position: left center;
+  }
+  .card-2 .card-body {
+    display: block;
+    padding: 60px 50px;
+  }
+}
+
+body {font-family: Arial, Helvetica, sans-serif;}
+
+
+
+/* Set a style for all buttons */
+.switch{
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+img.avatar {
+  vertical-align: middle;
+  width: 200px;
+  height: 200px;
+  border-radius: 75%;
+}
+
+.container {
+  padding: 12px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+
+
+
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+body {
+  font-family: "Times New Roman", Times, serif;
+  transition: background-color .5s;
+}
+
+.ip{
+  color: black;
+font-size: 21px;
+margin-top: -25px;
+margin-left: 1455px;
+}
+.nav_back{
+
+    height: 925px;
+    border-radius: 3px;
+    width: 218px;
+    margin-left: 10px;
+    background:rgb(0, 0, 0);
+    margin-top: -300px;
+
+}
+.tbt
+{
+  color: white;
+   margin-left: 9px; 
+   font-size: 21px;  
+   margin-top: 819px;
+}
+
+
+.container {
+  position: fixed;
+  margin-top: -925px;
+  margin-bottom: 0px;
+  margin-left: 235px;
+  height: 900px;
+  background-color: #c1e3f1;
+  width: 1675px;
+}
+
+.footer-content {
+  margin-top: -23px;
+  background-color: #c1e3f1;
+  width: 1675px;
+  margin-left: 235px;
+  height: 23px;
+}
+.box {
+  background-color: lightgrey;
+  width: 30px;
+  border: 1px solid green;
+  padding: 50px;
+  margin: 20px;
+}
+
+
+
+
+
+/* Clear floats after the tab */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+
+.navbar{
+  border-radius: 4px;
+    padding: 10px;
+margin: 10px;
+border-radius: 4px;
+background:rgb(0, 0, 0);
+margin-top: 6px;
+border-bottom-width: 8px;
+border-bottom-style: solid;
+margin-bottom: 10px;
+padding-bottom: 2px;
+padding-top: 7px;
+}
+
+
+
+.logo
+{
+
+    height: 36px;
+   padding:-10px;    margin-left: 247px;
+    width: 250px;
+    margin-top: -39px;
+
+}
+
+
+.Menu
+{
+font-size:30px;
+cursor:pointer;
+color:white;
+
+}
+.tbl_easy{border-radius: 4px;
+    height: 135px;
+    width: 27%;
+    padding: 16px;
+    margin-left: 90px;
+    margin-top: 40px;
+    margin-block-start: 55px;
+background:grey;
+}
+.xss_dom{
+    border-radius: 4px;
+    height: 200px;
+    width: 27%;
+    padding: 16px;
+    margin-left: 90px;
+    margin-top: 90px;
+    margin-block-start: 85px;
+    background: 
+    grey;
+}
+.xss_reflected{border-radius: 4px;
+    height: 200px;
+    width: 27%;
+    padding: 16px;
+    margin-left: 475px;
+    margin-top: 72px;
+    margin-block-start: -200px;
+    background: 
+    grey;
+    margin-right: 59px;
+}
+.xss_stored{border-radius: 4px;
+    height: 200px;
+    width: 27%;
+    padding: 16px;
+    margin-left: 862px;
+    margin-top: 72px;
+    margin-block-start: -200px;
+    background: 
+    grey;
+    margin-right: 59px;
+}
+
+.submit_frm1{border-radius: 4px;width: 50px;height: 45px;margin-left: 16px;}
+.submit_frm2{border-radius: 4px;width: 50px;height: 45px;margin-left: 250px;}
+.submit_frm3{border-radius: 4px;width: 50px;height: 45px;margin-left: 250px;}
+
+
+.header_tbl{
+height: 61px;
+    width: 100%;}
+.container_tbl{
+height:400px	 }
+
+
+
+
+.contact_tbl{
+
+border-radius: 4px;
+    height: 200px;
+    width: 27%;
+    padding: 16px;
+    margin-left: 66px;
+    margin-top: 72px;
+    margin-block-start: -140px;
+    background: 
+    navy;
+    margin-right: 59px;}
+.about_tbl{
+
+border-radius: 4px;
+    height: 200px;
+    width: 27%;
+    padding: 16px;
+    margin-left: 536px;
+    margin-top: 72px;
+    margin-block-start: -200px;
+    background: 
+    navy;
+    margin-right: 59px;}
+
+
+
+.tutorial_tbl{
+border-radius: 4px;
+    height: 200px;
+    width: 27%;
+    padding: 16px;
+    margin-left: 1007px;
+    margin-top: 72px;
+    margin-block-start: -200px;
+    background: navy;
+    margin-right: 59px;}
+
+
+
+.fa {
+  padding: 27px;
+ 
+  text-align: center;
+  text-decoration: none;
+  margin: 0px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.5;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+
+
+.header_tbl_challenges{
+    background:
+    lightgray;
+    height: 390px;
+    margin-left: 0px;
+    padding: 15px;
+    margin-right: 1061px;
+margin-block-start: 40px;
+}
+
+.cmd-inj-lvl-1{
+    background-color: #f8fafa;
+    border-width: 1px;
+    border-style: solid;
+    position:absolute;
+    border-color: #000000;
+    padding: 10px 20px 10px 20px;
+    margin-bottom: 20px;
+    width: 30%;
+padding: 20px;
+margin-left: 133px;
+margin-top: 20px;
+margin-inline-start: 121px;
+}
+.cmd-inj-lvl-2{
+  background-color: #f8fafa;
+  border-width: 1px;
+  border-style: solid;
+  position:absolute;
+  border-color: #000000;
+  padding: 10px 20px 10px 20px;
+  margin-bottom: 20px;
+  width: 30%;
+  padding: 20px;
+  margin-left: 133px;
+  margin-top: -96px;
+  margin-inline-start: 980px;
+}
+.cmd_injection{
+    width: 50%;
+    height: 34px;
+    border-width: 2px;
+  border: 1px solid #b87e7e;
+}
+.Vline {
+  border-left: 1px solid rgb(5, 12, 5);
+  height: 90px;
+  margin-left: 800px;
+  margin-top: -85px;
+}
+.response-1{
+  height: 468px;
+  width: 700px;
+  border-width: 1px;
+}
+.response-2{
+
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.net_auth{
+width:25%;
+margin-left:50px;padding: 0px;
+margin-top: 18px;
+border-top-width: 0px;
+
+}
+.ftp_auth{
+width:25%;
+margin-left:50px;padding: 0px;
+margin-top: 18px;
+border-top-width: 0px;
+;}
+
+
+.telnet_auth{
+width:25%;
+margin-left:50px;padding: 0px;
+margin-top: 18px;
+border-top-width: 0px;
+}
+
+.stgn_1{
+width:25%;
+margin-left:50px;
+margin-top: 18px;
+
+}
+
+.crypto_1{
+  width:25%;
+  margin-left:50px;padding: 0px;
+  margin-top: 18px;
+  border-top-width: 0px;
+  border-top-style: solid;}
+
+
+.form {
+  border: 2px;
+    margin: 50px auto;
+    width: 300px;
+    height: 320px;
+    width: 300px;
+    border-radius: 3%;
+    padding: 25px 25px;
+    background: rgb(198, 198, 198);
+margin-right: 90px;
+    margin-top: 120px;
+
+
+}
+.success-msg{
+color: green;
+margin-left: 40px;
+margin-top: 25px;
+}
+.err-msg{
+color: red;
+margin-left: 40px;
+margin-top: 25px;
+}
+
+
+.result {
+height: 70px;
+color:green;
+width: 15.6%;
+margin-left: 1529px;
+margin-top: -50px;
+}
+
+.result1 {
+height: 70px;
+color:red;
+width: 15.6%;
+margin-left: 1529px;
+margin-top: -50px;
+}
+
+.result_login {
+height: 70px;
+width: 15.6%;
+color: red;
+margin-left: 1529px;
+margin-top: -100px;
+border-radius: 5%;
+}
+
+h1.login-title {
+    color: rgb(128, 128, 128);
+    margin: 0px auto 25px;
+    font-size: 25px;
+    font-weight: 300;
+    text-align: center;
+}
+.login-input {
+    font-size: 15px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 2%;
+    margin-bottom: 25px;
+    height: 25px;
+    width: calc(100% - 23px);
+    margin-left: 12px;
+}
+.login-input:focus {
+    border-color:#363c42;
+    outline: none;
+    border-radius: 2%;
+}
+.login-button {
+    color: #fff;
+    background: #55a1ff;
+    border: 0;
+    outline: 0;
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    border-radius: 2%;
+    text-align: center;
+    cursor: pointer;
+}
+.link {
+    color: rgb(153, 149, 149);
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+.link a {
+    color: #111;
+    text-decoration: none;
+}
+h3 {
+    font-weight: normal;
+    text-align: center;
+}
+.user{
+    height: 20px;
+    width: 80%;
+   
+    background-color: #101111;
+    margin-left: 1230px;
+    margin-top: -32px;
+
+}
+
+.mynav1{
+  margin-left: 90px;
+}
+
+/*============================================================================
+#products
+=============================================================================*/
+
+
+#shopping-cart {
+  margin: 40px;
+}
+
+#product-grid {
+  margin: 40px;
+}
+
+#shopping-cart table {
+  width: 100%;
+  background-color: #F0F0F0;
+}
+
+#shopping-cart table td {
+  background-color: #FFFFFF;
+}
+
+.txt-heading {
+  color: #211a1a;
+  border-bottom: 1px solid #E0E0E0;
+  overflow: auto;
+}
+
+#btnEmpty {
+  background-color: #ffffff;
+  border: #d00000 1px solid;
+  padding: 5px 10px;
+  color: #d00000;
+  float: right;
+  text-decoration: none;
+  border-radius: 3px;
+  margin: 10px 0px;
+}
+
+.btnAddAction {
+    padding: 5px 10px;
+    margin-left: 5px;
+    background-color: #efefef;
+    border: #E0E0E0 1px solid;
+    color: #211a1a;
+    float: right;
+    text-decoration: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#product-grid .txt-heading {
+  margin-bottom: 18px;
+}
+
+.product-item {
+  float: left;
+  background: #ffffff;
+  margin: 30px 30px 0px 0px;
+  border: #E0E0E0 1px solid;
+}
+
+.product-image {
+  height: 155px;
+  width: 250px;
+  background-color: #FFF;
+}
+
+.clear-float {
+  clear: both;
+}
+
+.demo-input-box {
+  border-radius: 2px;
+  border: #CCC 1px solid;
+  padding: 2px 1px;
+}
+
+.tbl-cart {
+  font-size: 0.9em;
+}
+
+.tbl-cart th {
+  font-weight: normal;
+}
+
+.product-title {
+  margin-bottom: 20px;
+}
+
+.product-price {
+  float:left;
+}
+
+.cart-action {
+  float: right;
+}
+
+.product-quantity {
+    padding: 5px 10px;
+    border-radius: 3px;
+    border: #E0E0E0 1px solid;
+}
+
+.product-tile-footer {
+    padding: 15px 15px 0px 15px;
+    overflow: auto;
+}
+
+.cart-item-image {
+  width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: #E0E0E0 1px solid;
+    padding: 5px;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+.no-records {
+  text-align: center;
+  clear: both;
+  margin: 38px 0px;
+}

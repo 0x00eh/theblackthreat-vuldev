@@ -1,0 +1,410 @@
+
+/* ==========================================================================
+   #BOX-SIZING
+   ========================================================================== */
+/**
+ * More sensible default box-sizing:
+ * css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice
+ */
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+
+
+
+/* ==========================================================================
+   #PAGE WRAPPER
+   ========================================================================== */
+.page-wrapper {
+  min-height: 100vh;
+}
+
+body {
+  font-family: "Roboto", "Arial", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 15px;
+}
+
+h6 {
+  font-size: 13px;
+}
+
+/* ==========================================================================
+   #SPACING
+   ========================================================================== */
+.p-t-100 {
+  padding-top: 100px;
+}
+
+.p-t-180 {
+  padding-top: 180px;
+}
+
+.p-t-20 {
+  padding-top: 20px;
+}
+
+.p-t-30 {
+  padding-top: 30px;
+}
+
+.p-b-100 {
+  padding-bottom: 100px;
+}
+
+/* ==========================================================================
+   #WRAPPER
+   ========================================================================== */
+.wrapper {
+  margin: 0 auto;
+}
+
+.wrapper--w960 {
+  max-width: 960px;
+}
+
+.wrapper--w680 {
+  max-width: 680px;
+}
+
+
+/* ==========================================================================
+   #DATE PICKER
+   ========================================================================== */
+td.active {
+  background-color: #2c6ed5;
+}
+
+input[type="date" i] {
+  padding: 14px;
+}
+
+.table-condensed td, .table-condensed th {
+  font-size: 14px;
+  font-family: "Roboto", "Arial", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+}
+
+.daterangepicker td {
+  width: 40px;
+  height: 30px;
+}
+
+
+
+/* ==========================================================================
+   #FORM
+   ========================================================================== */
+input {
+  outline: none;
+  margin: 0;
+  border: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  width: 100%;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+/* input group 1 */
+/* end input group 1 */
+.input-group {
+  position: relative;
+  margin-bottom: 32px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.input-icon {
+  position: absolute;
+  font-size: 18px;
+  color: #ccc;
+  right: 8px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.input--style-2 {
+  padding: 9px 0;
+  color: #666;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.input--style-2::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #808080;
+}
+
+.input--style-2:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #808080;
+  opacity: 1;
+}
+
+.input--style-2::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #808080;
+  opacity: 1;
+}
+
+.input--style-2:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #808080;
+}
+
+.input--style-2:-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #808080;
+}
+
+
+/* ==========================================================================
+   #TITLE
+   ========================================================================== */
+
+.title {
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 37px;
+}
+
+body {font-family: Arial, Helvetica, sans-serif;}
+
+
+
+/* Set a style for all buttons */
+.switch{
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+body {
+  font-family: "Times New Roman", Times, serif;
+  transition: background-color .5s;
+}
+
+
+
+
+
+
+
+
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+
+.navbar
+{border-radius: 4px;
+    padding: 13px;
+margin: 10px;
+border-radius: 4px;
+background:rgb(0, 0, 0);
+}
+
+.logo{
+    height: 36px;
+   padding:-10px;    margin-left: 247px;
+    width: 250px;
+    margin-top: -39px;
+}
+
+.Menu
+{
+font-size:30px;
+cursor:pointer;
+color:white;
+
+}
+
+.form {
+  border: 2px;
+    margin: 50px auto;
+    width: 300px;
+    height: 320px;
+    width: 300px;
+    border-radius: 3%;
+    padding: 25px 25px;
+    background: rgb(198, 198, 198);
+margin-right: 90px;
+    margin-top: 120px;
+}
+
+.success-msg{
+color: green;
+margin-left: 40px;
+margin-top: 25px;
+}
+.err-msg{
+color: red;
+margin-left: 40px;
+margin-top: 25px;
+}
+
+
+.result {
+height: 70px;
+color:green;
+width: 15.6%;
+margin-left: 1529px;
+margin-top: -50px;
+}
+
+.result1 {
+height: 70px;
+color:red;
+width: 15.6%;
+margin-left: 1529px;
+margin-top: -50px;
+}
+
+.result_login {
+height: 70px;
+width: 15.6%;
+color: red;
+margin-left: 1529px;
+margin-top: -100px;
+border-radius: 5%;
+}
+
+h1.login-title {
+    color: rgb(128, 128, 128);
+    margin: 0px auto 25px;
+    font-size: 25px;
+    font-weight: 300;
+    text-align: center;
+}
+.login-input {
+    font-size: 15px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 2%;
+    margin-bottom: 25px;
+    height: 25px;
+    width: calc(100% - 23px);
+    margin-left: 12px;
+}
+.login-input:focus {
+    border-color:#363c42;
+    outline: none;
+    border-radius: 2%;
+}
+.login-button {
+    color: #fff;
+    background: #55a1ff;
+    border: 0;
+    outline: 0;
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    border-radius: 2%;
+    text-align: center;
+    cursor: pointer;
+}
+.link {
+    color: rgb(153, 149, 149);
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+.link a {
+    color: #111;
+    text-decoration: none;
+}
+h3 {
+    font-weight: normal;
+    text-align: center;
+}
+
+
