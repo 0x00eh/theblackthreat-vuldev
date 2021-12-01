@@ -94,7 +94,7 @@
         else {
             $cmd = shell_exec( 'ping  -c 4 ' . $target );
         }
-        echo "<pre style='margin-left: 45px;width: 745px; height:600px;position:absolute;'>{$cmd}</pre>";
+        echo "<pre style='margin-left: 45px;width: 745px; height:600px;position:absolute;margin-top: 125px;'>{$cmd}</pre>";
 
       }
     ?> 
@@ -136,7 +136,7 @@ if( isset( $_POST[ 'Submit2' ]  ) ) {
 		// *nix
 		$cmd = shell_exec( 'ping  -c 4 ' . $target );
 	}
-	echo "<pre style='margin-left: 45px;width: 745px; height:600px;position:absolute;''>{$cmd}</pre>";
+	echo "<pre style='margin-left: 45px;width: 745px; height:600px;position:absolute;margin-top: 125px;'>{$cmd}</pre>";
 }
 
 ?>     
