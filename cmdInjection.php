@@ -114,7 +114,7 @@ if( isset( $_POST[ 'Submit2' ]  ) ) {
 	$target = trim($_REQUEST[ 'ip-lvl-2' ]);
 //sanitization
 	$substitutions = array(
-		//'&'  => '',
+		'&'  => '',
 		';'  => '',
 		'| ' => '',
 		'-'  => '',
