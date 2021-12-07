@@ -1,5 +1,4 @@
 <?php
-<?php
 function getUserIP()
 {
     // Get real visitor IP behind CloudFlare network
