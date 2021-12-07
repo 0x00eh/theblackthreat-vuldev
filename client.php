@@ -11,25 +11,24 @@ function getUserIP()
     $remote  = $_SERVER['REMOTE_ADDR'];
     if(filter_var($client, FILTER_VALIDATE_IP))
     {
-        $ip = $client;
+        $ipAddress = $client;
     }
     elseif(filter_var($forward, FILTER_VALIDATE_IP))
     {
-        $ip = $forward;
+        $ipAddress = $forward;
     }
     else
     {
-        $ip = $remote;
+        $ipAddress = $remote;
     }
 
-    return $ip;
+    return $ipAddress;
 }
 
 include("lib/db.php");
 try{
- $ip = getUserIP();
+ $ipAddress = getUserIP();
  $statusCode='';
- $ipAddress='';
  $countryCode='';
  $countryName='';
  $regionName='';
