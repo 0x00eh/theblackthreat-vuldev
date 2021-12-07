@@ -37,7 +37,7 @@ try{
  $longitude='';
  $timeZone='';
  $apikey='6b8581c7f572b53d11a10791acde9efc62484502cfdc90152dd419cb187545bb';
- $url = 'http://api.ipinfodb.com/v3/ip-city/?key='.$apikey.'&format=json&ip='.$ip;
+ $url = 'http://api.ipinfodb.com/v3/ip-city/?key='.$apikey.'&format=json&ip='.$ipAddress;
  $response = file_get_contents($url);
   $json_array=json_decode($response,true);
   
